@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #ffffff00;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Genty';
+    src: url('/GentyDemo-Regular.ttf') format('truetype'),
+        url('/GentyDemo-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpyAgencyCollege';
+  src: url('/SpyAgencyCollege-XGGRg.otf') format('truetype'),
+       url('/SpyAgencyCollege-XGGRg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scr-N Seven Nr Tight';
+  src: url('/fonts/Scr-NSevenNrTight.woff2') format('woff2'),
+       url('/fonts/Scr-NSevenNrTight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-spyAgencyCollege: 'SpyAgencyCollege', sans-serif;
+}

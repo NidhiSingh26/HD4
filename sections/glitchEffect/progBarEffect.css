@@ -1,0 +1,38 @@
+.glitch {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .centered-image {
+    margin-bottom: 10px;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .progress-container {
+    width: 50%;
+    height: 10px;
+    background-color: #000;
+    border: 1px solid #51ABB2; 
+    box-shadow: 0 0 5px #51ABB2; 
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .progress-bar {
+    width: 0;
+    height: 100%;
+    background: repeating-linear-gradient(
+      45deg,
+      #51ABB2,
+      #51ABB2 5px,
+      #DD4047 5px,
+      #DD4047 10px
+    );
+    transition: width 1s linear;
+    box-shadow: 0 0 8px #51ABB2; 
+  }
+  

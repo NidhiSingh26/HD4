@@ -1,0 +1,9 @@
+.matrix-background {
+  background-image: url("../../public/Binary for Background.svg");
+  background-color: #000;
+  background-size: cover;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}

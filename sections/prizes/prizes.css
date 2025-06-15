@@ -1,0 +1,70 @@
+:root {
+    --marquee-speed: 40s;
+    /* Adjust the speed here */
+}
+
+@keyframes beam-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.5);
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.beam-down {
+    opacity: 0;
+    /* Start invisible */
+    animation: beam-down 1s ease-out forwards;
+}
+
+.marquee {
+    display: flex;
+    flex-direction: column;
+    animation: marquee var(--marquee-speed) linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.prize-carousel {
+  /* Hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.prize-carousel::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+/* Optional: Add some glow effects */
+.prize-carousel .hover\:border-red:hover {
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Smooth transitions for prize items */
+.prize-carousel > div {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.prize-carousel > div:hover {
+  filter: brightness(1.2);
+}
+
+/* Prize info popup styling */
+.prize-info-popup {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
