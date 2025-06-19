@@ -4,8 +4,13 @@ import "./prizes.css";
 import prizes from "./prizes-array";
 
 const PrizesSection = () => {
-  const [hoveredPrizeIndex, setHoveredPrizeIndex] = useState<number | null>(null);
-  const [hoveredPrize, setHoveredPrize] = useState<{ name: string; imageUrl: string } | null>(null);
+  const [hoveredPrizeIndex, setHoveredPrizeIndex] = useState<number | null>(
+    null
+  );
+  const [hoveredPrize, setHoveredPrize] = useState<{
+    name: string;
+    imageUrl: string;
+  } | null>(null);
   const prizeRefs = useRef<(HTMLDivElement | null)[]>([]);
   const carouselRef = useRef<HTMLDivElement>(null);
 
@@ -53,18 +58,18 @@ const PrizesSection = () => {
 
     let scrollPosition = 0;
     const scrollSpeed = 3; // Much slower increment per frame
-    
+
     const animate = () => {
       if (!carousel) return;
-      
+
       scrollPosition += scrollSpeed;
       carousel.scrollLeft = scrollPosition;
-      
+
       // Reset when reaching the end
       if (scrollPosition >= carousel.scrollWidth - carousel.clientWidth) {
         scrollPosition = 0;
       }
-      
+
       requestAnimationFrame(animate);
     };
 
@@ -75,7 +80,10 @@ const PrizesSection = () => {
     };
   }, []);
 
-  const handlePrizeHover = (prize: { name: string; imageUrl: string }, index: number) => {
+  const handlePrizeHover = (
+    prize: { name: string; imageUrl: string },
+    index: number
+  ) => {
     setHoveredPrize(prize);
     setHoveredPrizeIndex(index);
   };
@@ -88,24 +96,28 @@ const PrizesSection = () => {
   return (
     <section
       id="prizes"
-      className="max-h-[800px] matrix-background w-full flex flex-col relative" 
+      className="max-h-[800px] w-full flex flex-col relative"
     >
       {/* Header with responsive positioning */}
       <header className="relative z-20 flex justify-center mt-5 mb-1">
         <div className="bg-purple text-black px-8 py-2 rounded-full shadow-lg">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center">PRIZES</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center">
+            PRIZES
+          </h1>
         </div>
       </header>
 
       {/* Prize Carousel with responsive margins */}
-      <div className="mt-16 md:mt-16 lg:mt-24 w-full relative flex justify-center"> 
-        <div 
+      <div className="mt-16 md:mt-16 lg:mt-24 w-full relative flex justify-center">
+        <div
           ref={carouselRef}
           className="z-30 flex overflow-hidden prize-carousel mt-[20px] pt-[20px] w-[50%] md:w-[50%] lg:w-[30%]"
-          style={{ 
-            scrollBehavior: 'auto',
-            maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
-            WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)'
+          style={{
+            scrollBehavior: "auto",
+            maskImage:
+              "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
+            WebkitMaskImage:
+              "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
           }}
         >
           {/* Duplicate prizes array to create seamless loop */}
@@ -117,7 +129,7 @@ const PrizesSection = () => {
               onMouseLeave={handlePrizeLeave}
             >
                 <div className="w-20 h-20 md:w-28 md:h-28 relative mb-2 rounded-lg overflow-hidden border-2 border-transparent hover:border-red transition-colors duration-300">
-                  <Image
+                <Image
                   src={prize.imageUrl}
                   alt={prize.name}
                   fill

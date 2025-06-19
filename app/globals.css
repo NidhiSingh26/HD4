@@ -30,7 +30,22 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+.matrix-bg {
+  background-image: url("/Binary for Background.svg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000;
+}
+@media (max-width: 768px) {
+  .matrix-bg {
+    background-size: 340% auto;
+    background-attachment: scroll;
+    background-position: top center;
 
+  }
+}
 :root {
   --font-spyAgencyCollege: 'SpyAgencyCollege', sans-serif;
 }

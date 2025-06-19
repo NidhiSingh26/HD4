@@ -36,6 +36,8 @@ export default function Home() {
   return (
     //don't need the gap here
     <div className="w-full h-full font-poppins">
+      <div className="fixed inset-0 -z-10 bg-black matrix-bg" />
+
       <div className="fixed w-full z-50">
         <HeaderSection />
       </div>
@@ -50,7 +52,7 @@ export default function Home() {
           />
         </a>
       </div>
-      <div className="flex flex-col w-full h-full bg-black pt-16">
+      <div className="flex flex-col w-full h-full pt-16">
         <HeroSection />
         <AboutSection />
         <TracksSection />
@@ -59,7 +61,7 @@ export default function Home() {
         <FaqSection />
         <OurTeamSection />
         <ContactSection />
-        <FooterSection/>
+        <FooterSection />
       </div>
     </div>
   );

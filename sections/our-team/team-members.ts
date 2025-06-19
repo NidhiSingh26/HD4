@@ -67,7 +67,7 @@ export const devTeamMembers: TeamMember[] = [
     name: "Celine Chahine",
     imageUrl: "/headshots/Celine_Chahine.jpg",
     role: "Developer",
-    linkedin: "www.linkedin.com/in/celine-chahine-678b55263",
+    linkedin: "https://www.linkedin.com/in/celine-chahine-678b55263",
   },
   {
     name: "Aditi Dharmadhikari",

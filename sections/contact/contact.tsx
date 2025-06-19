@@ -31,19 +31,25 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="w-full matrix-background py-16 flex flex-col  items-center text-[#cb69ff]"
+      className="w-full py-16 flex flex-col items-center text-[#cb69ff]"
     >
       <div className="flex justify-center pt-20 mb-8">
         <div className="bg-purple text-black px-8 py-2 rounded-full shadow-lg">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center">CONTACT</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center">
+            CONTACT
+          </h1>
         </div>
       </div>
 
-      <div className="flex h-auto matrix-background md:flex-row flex-col-reverse gap-x-16 w-full items-center justify-center">
+      <div className="flex h-auto flex-row gap-x-16 w-full items-center justify-center">
         <PhoneComponent />
         <div className="flex lg:px-0 mx-0 text-white flex-col text-center items-center w-fit text-3xl md:text-4xl">
-          <div className="flex text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow">Any questions?</div>
-          <div className="flex text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow">Contact us</div>
+          <div className="flex text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow">
+            Any questions?
+          </div>
+          <div className="flex text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow">
+            Contact us
+          </div>
           <a
             href="mailto:info@hackdearborn.org"
             target="_blank"
@@ -65,7 +71,9 @@ const ContactSection = () => {
               hackdearborn.org
             </span>
           </a>
-          <div className="flex text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow">Connect with us</div>
+          <div className="flex text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow">
+            Connect with us
+          </div>
           <div className="flex gap-4 text-3xl justify-evenly py-5 text-white">
             <a
               href="https://www.linkedin.com/company/hack-dearborn/about/"

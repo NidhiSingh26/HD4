@@ -29,11 +29,10 @@ const HeroSection = () => {
   return (
     <div
       id="home"
-      className="relative flex flex-col md:flex-row items-center justify-between min-h-screen px-6 sm:px-10 md:px-16 py-10 bg-black overflow-hidden matrix-background"
+      className="relative flex flex-col md:flex-row items-center justify-between min-h-screen px-6 sm:px-10 md:px-16 py-10 overflow-hidden"
     >
-
       <div className="relative z-20 flex-1 flex flex-col items-center justify-center text-center w-full">
-        <div className="absolute inset-0 z-5 pointer-events-none">
+        <div className="absolute inset-0 z-0 pointer-events-none">
           <Image
             src="/Shine.png"
             alt="Shine Overlay"

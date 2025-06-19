@@ -9,11 +9,13 @@ import OperationAutoDrive from "@/components/tracks/track-articles/OperationAuto
 
 const TracksSection = () => {
   return (
-    <section id="tracks" className="matrix-background relative">
+    <section id="tracks" className="relative">
       {/* --------------TITLE-------------- */}
       <header className="relative z-20 flex justify-center mt-5 mb-1">
         <div className="bg-purple text-black px-8 py-2 rounded-full shadow-lg">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center">TRACKS</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center">
+            TRACKS
+          </h1>
         </div>
       </header>
       {/*  --------------TRACKS CONTAINER -------------- */}

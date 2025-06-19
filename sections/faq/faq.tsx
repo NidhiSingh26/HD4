@@ -19,7 +19,7 @@ const FaqSection = () => {
   }, []);
 
   return (
-    <div id="faq" className="bg-black relative matrix-background z-20">
+    <div id="faq" className=" relative z-20">
       <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-0 pb-16 md:pb-24">
         <div className="flex justify-center pt-12 md:pt-20 mb-8">
           <div className="bg-purple text-black px-6 py-2 rounded-full shadow-lg">
@@ -40,8 +40,11 @@ const FaqSection = () => {
         )}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 md:gap-x-6 items-start p-8">
-
-          <div className={`flex flex-col gap-8 ${isMobile ? "" : "md:gap-[16rem]"}`}>
+          <div
+            className={`flex flex-col gap-8 ${
+              isMobile ? "" : "md:gap-[16rem]"
+            }`}
+          >
             {faqItems.slice(0, 3).map((item, index) => (
               <div key={`faq-col1-${index}`} className="relative">
                 <Dropdown
@@ -71,7 +74,11 @@ const FaqSection = () => {
             </div>
           </div>
 
-          <div className={`flex flex-col gap-8 ${isMobile ? "" : "md:gap-[16rem]"}`}>
+          <div
+            className={`flex flex-col gap-8 ${
+              isMobile ? "" : "md:gap-[16rem]"
+            }`}
+          >
             {faqItems.slice(4, 7).map((item, index) => (
               <div key={`faq-col3-${index + 4}`} className="relative">
                 <Dropdown
@@ -84,7 +91,6 @@ const FaqSection = () => {
           </div>
         </div>
       </div>
-
       <div className="w-full flex justify-center mt-8 mb-4 relative z-30">
         <a
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
