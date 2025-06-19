@@ -84,6 +84,17 @@ const FaqSection = () => {
           </div>
         </div>
       </div>
+
+      <div className="w-full flex justify-center mt-8 mb-4 relative z-30">
+        <a
+          href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-purple hover:text-[#cb69ff] transition-colors duration-300 font-spy underline"
+        >
+          MLH Code of Conduct
+        </a>
+      </div>
     </div>
   );
 };
