@@ -25,7 +25,7 @@ const OurTeamSection = () => (
           </div>
         </div>
       </header>
-      <section className="sm:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto w-full my-16">
+      <section className="sm:max-w-3xl lg:max-w-5xl xl:max-w-7xl mx-auto w-full my-0">
         <div className="p-4 rounded-lg bg-transparent" id="box_div">
           <div className="flex flex-col gap-4 sm:gap-8 px-4 sm:px-0">
             <TeamGrid members={coreTeamMembers} title="Core Team" />

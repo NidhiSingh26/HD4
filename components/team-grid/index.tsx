@@ -9,7 +9,7 @@ type TeamGridProps = {
 const TeamGrid = ({ members, title }: TeamGridProps) => (
   <div className="flex-1 flex flex-col items-center w-full gap-4 mb-12">
     {/* Styled Section Header */}
-    <div className="bg-purple text-black px-6 py-2 rounded-full shadow-lg">
+    <div className="bg-purple text-black mb-12 px-6 py-2 rounded-full shadow-lg">
       <h2 className="text-3xl md:text-4xl lg:text-5xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center">
         {title}
       </h2>
