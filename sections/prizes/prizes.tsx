@@ -2,6 +2,8 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import "./prizes.css";
 import prizes from "./prizes-array";
+import aboutvideo from "../../public/suitcase-money.gif";
+
 
 const PrizesSection = () => {
   const [hoveredPrizeIndex, setHoveredPrizeIndex] = useState<number | null>(
@@ -13,6 +15,9 @@ const PrizesSection = () => {
   } | null>(null);
   const prizeRefs = useRef<(HTMLDivElement | null)[]>([]);
   const carouselRef = useRef<HTMLDivElement>(null);
+  const [showComingSoon, setShowComingSoon] = useState(false);
+  const [gifLoaded, setGifLoaded] = useState(false);
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -80,10 +85,22 @@ const PrizesSection = () => {
     };
   }, []);
 
-  const handlePrizeHover = (
-    prize: { name: string; imageUrl: string },
-    index: number
-  ) => {
+  // Effect for "Coming Soon" text
+  useEffect(() => {
+    if (gifLoaded) {
+      const timer = setTimeout(() => {
+        setShowComingSoon(true);
+      }, 4500); // 4000 milliseconds = 4 seconds
+
+      return () => clearTimeout(timer); // Clean up the timer if the component unmounts
+    }
+  }, [gifLoaded]);
+
+  const handleGifLoad = () => {
+    setGifLoaded(true);
+  };
+
+  const handlePrizeHover = (prize: { name: string; imageUrl: string }, index: number) => {
     setHoveredPrize(prize);
     setHoveredPrizeIndex(index);
   };
@@ -106,70 +123,37 @@ const PrizesSection = () => {
           </h1>
         </div>
       </header>
+        {/* Centering the Image element using mx-auto and relative positioning for overlay */}
+        <div className="relative flex mt-10 flex-1 rounded-lg rounded-md border-2 max-w-[600px] justify-center items-center mx-auto">
+          <Image
+            src={aboutvideo}
+            alt="Picture"
+            layout="responsive"
+            unoptimized={true}
+            className="z-20 rounded-lg "
+            onLoad={handleGifLoad} // Call handleGifLoad when the GIF is loaded
+          />
 
-      {/* Prize Carousel with responsive margins */}
-      <div className="mt-16 md:mt-16 lg:mt-24 w-full relative flex justify-center">
-        <div
-          ref={carouselRef}
-          className="z-30 flex overflow-hidden prize-carousel mt-[20px] pt-[20px] w-[50%] md:w-[50%] lg:w-[30%]"
-          style={{
-            scrollBehavior: "auto",
-            maskImage:
-              "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
-            WebkitMaskImage:
-              "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
-          }}
-        >
-          {/* Duplicate prizes array to create seamless loop */}
-          {[...prizes, ...prizes, ...prizes].map((prize, index) => (
-            <div
-              key={`${prize.name}-${index}`}
-              className="inline-flex flex-col items-center mx-4 md:mx-8 cursor-pointer transition-transform duration-300 hover:scale-110 flex-shrink-0 "
-              onMouseEnter={() => handlePrizeHover(prize, index)}
-              onMouseLeave={handlePrizeLeave}
-            >
-                <div className="w-20 h-20 md:w-28 md:h-28 relative mb-2 rounded-lg overflow-hidden border-2 border-transparent hover:border-red transition-colors duration-300">
-                <Image
-                  src={prize.imageUrl}
-                  alt={prize.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-white text-xs md:text-sm text-center font-medium max-w-[80px] md:max-w-[100px] whitespace-normal leading-tight">
-                {prize.name}
-              </p>
+          {showComingSoon && (
+            <div className="absolute inset-0 flex items-center pb-20 justify-center bg-purple-600 bg-opacity-75">
+              {/* Semi-transparent purple background */}
+              {/* Updated font, size, and color for "Coming Soon" */}
+              <p className="text-white text-6xl solid black font-bold italic font-orpheus-italic z-40 "      
+                style={{
+                  textShadow: `
+                    -0.5px -0.5px 0 black,
+                    0.5px -0.5px 0 black,
+                    -0.5px 0.5px 0 black,
+                    0.5px 0.5px 0 black,
+                    0 0 8px #a855f7,
+                    0 0 16px #a855f7
+                  `
+                }}
+              >
+                Coming Soon !!!</p>
             </div>
-          ))}
+          )}
         </div>
-      </div>
-
-      {/* Centered laptop SVG with GIF inside - auto height */}
-      <div className="mt-20 mb-20 relative w-full flex justify-center items-center ">
-        <div className="transform scale-75 md:scale-100 lg:scale-[1.2]">
-          {/* Laptop SVG image */}
-          <div className="relative z-10 w-[80vw] md:w-[75vw] max-w-[500px] flex justify-center items-center">
-            <Image
-              src="/Laptop- About Page.svg"
-              alt="Laptop SVG"
-              width={500}
-              height={1027}
-              className="relative z-10 w-full h-auto"
-            />
-            {/* Sponsors GIF overlayed inside the laptop */}
-            <div className="absolute z-20 w-[150%] h-[80%] mb-100 flex pb-[200px] pr-[20px] justify-center items-center -mt-[7.5%]">
-              <Image
-                src="/Hologram- Prizes.svg"
-                alt="Sponsors GIF"
-                width={0}
-                height={0}
-                sizes="100vw"
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
