@@ -46,7 +46,7 @@ export const coreTeamMembers: TeamMember[] = [
 
 export const devTeamMembers: TeamMember[] = [
   {
-    name: "Fnu Nidhi",
+    name: "Nidhi",
     imageUrl: "/headshots/Fnu_Nidhi.jpg",
     role: "Development Lead",
     linkedin: "https://www.linkedin.com/in/nidhi-2bb225192/",

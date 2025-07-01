@@ -135,10 +135,10 @@ const PrizesSection = () => {
           />
 
           {showComingSoon && (
-            <div className="absolute inset-0 flex items-center pb-20 justify-center bg-purple-600 bg-opacity-75">
+            <div className="absolute inset-0 flex items-center md:pb-15 sm:pb-100 lg:pb-20 justify-center bg-purple-600 bg-opacity-75">
               {/* Semi-transparent purple background */}
               {/* Updated font, size, and color for "Coming Soon" */}
-              <p className="text-white text-6xl solid black font-bold italic font-orpheus-italic z-40 "      
+                <p className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold italic font-orpheus-italic z-40 text-center px-4"      
                 style={{
                   textShadow: `
                     -0.5px -0.5px 0 black,
