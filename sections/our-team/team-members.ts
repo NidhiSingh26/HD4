@@ -36,12 +36,12 @@ export const coreTeamMembers: TeamMember[] = [
     role: "Co Marketing Lead",
     linkedin: "https://www.linkedin.com/in/morgan-pruitt-07ab05265/",
   },
-  {
+  /*{
     name: "Bryanna Worthy",
     imageUrl: "/headshots/Bryanna_Worthy.JPG",
     role: "Co Marketing Lead",
     linkedin: "https://www.linkedin.com/in/bryanna-worthy-1b9824235/",
-  },
+  }*/
 ];
 
 export const devTeamMembers: TeamMember[] = [

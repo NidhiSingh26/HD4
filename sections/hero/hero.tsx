@@ -59,7 +59,7 @@ const HeroSection = () => {
         <ApplyButton />
       </div>
 
-      <div className="relative z-20 flex-1 flex items-center justify-center w-full mt-10 md:mt-0">
+      <div className="relative z-20 flex-1 flex items-center justify-center w-full mt-10 md:mt-0 ml-6 sm:ml-0  ">
         <div
           className="
           relative
@@ -82,6 +82,13 @@ const HeroSection = () => {
             alt="Hologram"
             fill
             className="object-contain z-20 -translate-y-1.5"
+          />
+
+          <Image
+            src="/homepage.gif"
+            alt="Animated Overlay"
+            fill
+            className="object-contain z-30 -translate-y-20 sm:-translate-y-24 md:-translate-y-32 lg:-translate-y-40"
           />
         </div>
       </div>
