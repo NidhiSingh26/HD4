@@ -33,7 +33,7 @@ export const coreTeamMembers: TeamMember[] = [
   {
     name: "Morgan Pruitt",
     imageUrl: "/headshots/Morgan_Pruitt.jpeg",
-    role: "Co Marketing Lead",
+    role: "Marketing Lead",
     linkedin: "https://www.linkedin.com/in/morgan-pruitt-07ab05265/",
   },
   /*{
