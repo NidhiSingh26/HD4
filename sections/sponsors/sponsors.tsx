@@ -88,16 +88,20 @@ const sponsors = [
     level: "Bronze",
   },
   {
-    name: "Standout Stickers",
-    image: "/logos/stand-out-stickers-logo.png",
-    website: "http://hackp.ac/mlh-StandOutStickers-hackathons",
-    level: "Bronze",
+    name: "Pure Buttons",
+    image: "/logos/purebuttons.png",
+    website: "https://mlh.link/MLH-PureButtons-hackathons",
+    level: "",
   },
 ];
 
 const levelOrder = ["Platinum", "Gold", "Silver", "Bronze"];
 const sortedSponsors = sponsors.sort((a, b) => {
-  return levelOrder.indexOf(a.level) - levelOrder.indexOf(b.level);
+  const getIndex = (level: string): number => {
+    const index = levelOrder.indexOf(level);
+    return index === -1 ? levelOrder.length : index; // unknown or empty = last
+  };
+  return getIndex(a.level) - getIndex(b.level);
 });
 
 const getLevelBadgeStyles = (level: string) => {
