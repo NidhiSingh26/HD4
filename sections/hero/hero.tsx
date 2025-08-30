@@ -14,8 +14,8 @@ const ApplyButton = () => {
         onMouseLeave={() => setHovered(false)}
       >
         <button
-          className={`w-full h-full text-neonpurple font-spy italic text-lg sm:text-2xl md:text-3xl lg:text-4xl rounded-full flex items-center justify-center uppercase
-            ${hovered ? "bg-purple/80 shadow-purple-glow" : "bg-purple/70"}
+          className={`w-full h-full text-2xl md:text-4xl lg:text-5xl text-whitepurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center rounded-full
+            ${hovered ? "bg-purple" : "bg-purple/70"}
             transition-all duration-300`}
         >
           Apply Now

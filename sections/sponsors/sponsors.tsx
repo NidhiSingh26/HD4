@@ -7,32 +7,14 @@ const sponsors = [
     name: "Fetch.ai",
     image: "/logos/fetch.ai_Primary logo_navy.svg",
     website: "https://fetch.ai/",
-    level: "Platinum",
-  },
-  {
-    name: "Amazon",
-    image: "/logos/amazon.png",
-    website: "https://amazon.com",
     level: "Gold",
   },
-  {
-    name: "Carhartt",
-    image: "/logos/Carhartt_4cb-h copy.png",
-    website: "https://www.carhartt.com/",
-    level: "Gold",
-  },
-  {
-    name: "Little Caesars",
-    image: "/logos/little_caesars.png",
-    website: "https://littlecaesars.com/",
-    level: "Silver",
-  },
-  {
-    name: "ETAS",
-    image: "/logos/ETAS_Logo_Blue.png",
-    website: "https://www.etas.com/",
-    level: "Silver",
-  },
+  // {
+  //   name: "Intrepid Control Systems",
+  //   image: "",
+  //   website: "",
+  //   level: "Silver",
+  // },
   {
     name: "Magna",
     image: "/logos/2560px-Magna_logo.svg.png",
@@ -40,16 +22,34 @@ const sponsors = [
     level: "Silver",
   },
   {
-    name: "MAHLE",
-    image: "/logos/mahle.png",
-    website: "https://www.mahle.com/",
-    level: "Silver",
-  },
-  {
     name: "BorgWarner",
     image: "/logos/borgwarner.png",
     website: "https://www.borgwarner.com/home",
     level: "Silver",
+  },
+  {
+    name: "Semi Foundation",
+    image: "/logos/SEMIFoundationLogo.png",
+    website: "https://www.semi.org/en",
+    level: "Silver",
+  },
+  // {
+  //   name: "Terabox Foundation",
+  //   image: "",
+  //   website: "",
+  //   level: "Silver",
+  // },
+  {
+    name: "Amazon",
+    image: "/logos/amazon.png",
+    website: "https://amazon.com",
+    level: "Bronze",
+  },
+  {
+    name: "Ford",
+    image: "/logos/ford.png",
+    website: "https://www.ford.com",
+    level: "Bronze",
   },
   {
     name: "Rocket Central",
@@ -76,26 +76,20 @@ const sponsors = [
     level: "Bronze",
   },
   {
-    name: "Harman",
-    image: "/logos/harman.png",
-    website: "https://www.harman.com/",
-    level: "Bronze",
-  },
-  {
     name: "TechSmith",
     image: "/logos/techsmith.png",
     website: "https://www.techsmith.com/",
-    level: "Bronze",
+    level: "Friends",
   },
   {
     name: "Pure Buttons",
     image: "/logos/purebuttons.png",
     website: "https://mlh.link/MLH-PureButtons-hackathons",
-    level: "",
+    level: "Friends",
   },
 ];
 
-const levelOrder = ["Platinum", "Gold", "Silver", "Bronze"];
+const levelOrder = ["Gold", "Silver", "Bronze", "Friends"];
 const sortedSponsors = sponsors.sort((a, b) => {
   const getIndex = (level: string): number => {
     const index = levelOrder.indexOf(level);
@@ -114,8 +108,10 @@ const getLevelBadgeStyles = (level: string) => {
       return "bg-gray-400 text-gray-800";
     case "Bronze":
       return "bg-orange-500 text-white";
+    case "Friends":
+      return "bg-purple text-white";
     default:
-      return "bg-purple-500 text-white";
+      return "bg-blue-500 text-white";
   }
 };
 
@@ -128,7 +124,7 @@ const Sponsors = () => {
     >
       <div className="flex justify-center md:pt-20 mb-20">
         <div className="bg-purple text-black px-8 py-2 rounded-full shadow-lg">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl  text-whitepurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center">
             SPONSORS
           </h1>
         </div>

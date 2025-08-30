@@ -5,45 +5,58 @@ interface Prize {
 
 const prizes: Prize[] = [
   {
-    name: "Kasa Smart Wi-Fi Light Bulb (4 Pack)",
-    imageUrl: "/prizes/smartbulbs.jpg",
+    name: "Ray Ban Meta Sunglasses",
+    imageUrl: "/prizes/RayBanMetaGlassesHD4.png",
   },
   {
-    name: "Apple Watch SE (2nd Gen, 44mm)",
-    imageUrl: "/prizes/applewatch.png",
+    name: "Apple Watch SE",
+    imageUrl: "/prizes/AppleWatchSEHD4.png",
   },
   {
-    name: "AZIO Retro Mechanical Keyboard",
-    imageUrl: "/prizes/mechanicalkeyboard.png",
+    name: "IIWEY N5 4 Channel Dash Cam 360° View",
+    imageUrl: "/prizes/DashCamHD4.png",
   },
   {
-    name: "Beats Studio Pro Headphones",
-    imageUrl: "/prizes/beats.png",
+    name: "MNN Portable Monitor 15.6inch FHD 1080P + keyboard",
+    imageUrl: "/prizes/PortableMonitorHD4.png",
   },
   { 
-    name: "Coca-Cola Mini Fridge", 
-    imageUrl: "/prizes/coke.jpg" 
+    name: "Polaroid Hi Print", 
+    imageUrl: "/prizes/Polaroid.png" 
   },
   { 
-    name: "FUJIFILM Instax Mini 40 Camera", 
-    imageUrl: "/prizes/camera.png" 
+    name: "MYNT3D Pro 3D Pen", 
+    imageUrl: "/prizes/3DPen.png" 
   },
   { 
-    name: "Google Nest Hub (2nd Gen)", 
-    imageUrl: "/prizes/nesthub.png" 
-  },
-  {
-    name: "Marshall Emberton II Speaker",
-    imageUrl: "/prizes/marshall.png",
+    name: "GPS Drone with Camera", 
+    imageUrl: "/prizes/DroneHD4.png" 
   },
   { 
-    name: "Ring Video Doorbell Pro", 
-    imageUrl: "/prizes/ring.png" 
-  },
-  { 
-    name: "Sony Playstation 5", 
-    imageUrl: "/prizes/ps5.png" 
+    name: "Ring Camera", 
+    imageUrl: "/prizes/RingCameraHD4.png" 
   },
 ];
 
 export default prizes;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

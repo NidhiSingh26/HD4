@@ -58,12 +58,6 @@ export const devTeamMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/sidharth-k-ram/",
   },
   {
-    name: "Zhalgas Tileumuratin",
-    imageUrl: "/headshots/Zhalgas_Tileumuratin.jpeg",
-    role: "Developer",
-    linkedin: "https://www.linkedin.com/in/zhalgas-tileumuratin-08a4192aa/",
-  },
-  {
     name: "Celine Chahine",
     imageUrl: "/headshots/Celine_Chahine.jpg",
     role: "Developer",
