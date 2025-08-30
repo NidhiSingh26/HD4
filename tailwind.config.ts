@@ -8,7 +8,8 @@ export const colors = {
   yellow: "#FFD700",
   purple: "#a600ff",
   blue: "#00a3ff",
-  neonpurple: "#cc66ff"
+  neonpurple: "#cc66ff",
+  whitepurple : "#e6ccff"
 };
 
 const config: Config = {
@@ -32,6 +33,8 @@ const config: Config = {
          0 0 32px rgba(166,0,255,0.2)
          `,
         neon: '0 0 2px #e879f9, 0 0 4px #d946ef, 0 0 8px #c026d3, 1px 1px 1px #a21caf',
+        'glow-white': '0 0 2px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)'
+
         //neon: '0 0 5px #d946ef, 0 0 10px #d946ef, 0 0 20px #d946ef, 0 0 40px #d946ef',
       },
       dropShadow: {
@@ -89,7 +92,8 @@ const config: Config = {
         red: colors.red,
         blue: colors.blue,
         purple: colors.purple,
-        neonpurple: colors.neonpurple
+        neonpurple: colors.neonpurple,
+        whitepurple : colors.whitepurple
       },
     },
   },

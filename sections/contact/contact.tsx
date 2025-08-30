@@ -35,13 +35,13 @@ const ContactSection = () => {
     >
       <div className="flex justify-center pt-20 mb-16">
         <div className="bg-purple text-black px-8 py-2 rounded-full shadow-lg">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-whitepurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center">
             CONTACT
           </h1>
         </div>
       </div>
 
-      <div className="flex h-auto matrix-background md:flex-row flex-col-reverse gap-x-16 w-full items-center justify-center">
+      <div className="flex h-auto md:flex-row flex-col-reverse gap-x-16 w-full items-center justify-center">
         <PhoneComponent />
         <div className="flex lg:px-0 mx-0 text-white flex-col text-center items-center w-fit text-3xl md:text-4xl">
           <div className="flex text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow">
