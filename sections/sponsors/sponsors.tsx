@@ -9,6 +9,12 @@ const sponsors = [
     website: "https://fetch.ai/",
     level: "Gold",
   },
+  {
+    name: "Free Wili",
+    image: "/logos/FREE-WILi.png",
+    website: "https://freewili.com",
+    level: "Gold",
+  },
   // {
   //   name: "Intrepid Control Systems",
   //   image: "",
