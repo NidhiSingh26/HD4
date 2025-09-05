@@ -125,7 +125,7 @@ const Sponsors = () => {
   return (
     <div
       id="sponsors"
-      className="relative min-h-[1300px] lg:min-h-[900px] overflow-hidden flex flex-col items-center justify-center"
+      className="relative min-h-[1500px] lg:min-h-[900px] overflow-hidden flex flex-col items-center justify-center"
       // className="relative min-h-fit overflow-hidden flex flex-col items-center justify-center"
     >
       <div className="flex justify-center md:pt-20 mb-20">
