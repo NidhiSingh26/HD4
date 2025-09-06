@@ -12,6 +12,10 @@ const prizes: Prize[] = [
     name: "Apple Watch SE",
     imageUrl: "/prizes/AppleWatchSEHD4.png",
   },
+   { 
+    name: " Apple 11-inch iPad A16 Wi-Fi 128GB", 
+    imageUrl: "/prizes/iPadHD4.png" 
+  },
   {
     name: "IIWEY N5 4 Channel Dash Cam 360° View",
     imageUrl: "/prizes/DashCamHD4.png",

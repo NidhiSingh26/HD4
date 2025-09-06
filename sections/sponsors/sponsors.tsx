@@ -9,6 +9,12 @@ const sponsors = [
     website: "https://fetch.ai/",
     level: "Gold",
   },
+  {
+    name: "Free Wili",
+    image: "/logos/FREE-WILi.png",
+    website: "https://freewili.com",
+    level: "Gold",
+  },
   // {
   //   name: "Intrepid Control Systems",
   //   image: "",
@@ -119,8 +125,8 @@ const Sponsors = () => {
   return (
     <div
       id="sponsors"
-      // className="relative matrix-background min-h-[1100px] md:min-h-[1000px] lg:min-h-[900px] bg-black overflow-hidden flex flex-col items-center justify-center"
-      className="relative min-h-fit overflow-hidden flex flex-col items-center justify-center"
+      className="relative min-h-[1500px] lg:min-h-[900px] overflow-hidden flex flex-col items-center justify-center"
+      // className="relative min-h-fit overflow-hidden flex flex-col items-center justify-center"
     >
       <div className="flex justify-center md:pt-20 mb-20">
         <div className="bg-purple text-black px-8 py-2 rounded-full shadow-lg">

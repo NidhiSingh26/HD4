@@ -39,11 +39,12 @@ const FaqSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start p-0 md:p-8">
           <div className="hidden md:block md:col-span-1">
-            <div className="sticky top-24">
+            <div className="relative w-full h-[500px]">
               <Image
                 src={DetectiveFaqImage}
                 alt="Detective FAQ Image"
-                className="rounded-lg object-cover w-full h-auto max-w-[600px] mx-auto"
+                fill
+                className="rounded-lg object-cover"
               />
             </div>
           </div>

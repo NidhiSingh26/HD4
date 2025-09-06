@@ -88,6 +88,7 @@ const HeroSection = () => {
             src="/homepage.gif"
             alt="Animated Overlay"
             fill
+            unoptimized
             className="object-contain z-30 -translate-y-20 sm:-translate-y-24 md:-translate-y-32 lg:-translate-y-40"
           />
         </div>
