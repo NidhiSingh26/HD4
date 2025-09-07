@@ -11,7 +11,7 @@ const sponsors = [
   },
   {
     name: "Free Wili",
-    image: "/logos/FREE-WILi.png",
+    image: "/logos/FREE-WILI.png",
     website: "https://freewili.com",
     level: "Gold",
   },
