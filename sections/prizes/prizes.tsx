@@ -96,7 +96,7 @@ const PrizesSection = () => {
   return (
     <section
       id="prizes"
-      className="max-h-[800px] w-full flex flex-col relative"
+      className="max-h-[1000px] w-full flex flex-col relative"
     >
       {/* Header with responsive positioning */}
       <header className="relative z-20 flex justify-center mt-5 mb-1">
@@ -128,7 +128,7 @@ const PrizesSection = () => {
               onMouseEnter={() => handlePrizeHover(prize, index)}
               onMouseLeave={handlePrizeLeave}
             >
-              <div className="w-20 h-20 md:w-28 md:h-28 relative mb-2 rounded-lg overflow-hidden border-2 border-transparent hover:border-purple transition-colors duration-300">
+              <div className="w-32 h-32 md:w-40 md:h-40 relative mb-2 rounded-lg overflow-hidden border-2 border-transparent hover:border-purple transition-colors duration-300">
                 <Image
                   src={prize.imageUrl}
                   alt={prize.name}
@@ -136,9 +136,6 @@ const PrizesSection = () => {
                   className="object-contain"
                 />
               </div>
-              <p className="text-white text-xs md:text-sm text-center font-medium max-w-[80px] md:max-w-[100px] whitespace-normal leading-tight">
-                {prize.name}
-              </p>
             </div>
           ))}
         </div>
@@ -147,15 +144,7 @@ const PrizesSection = () => {
       {/* Centered laptop SVG with GIF inside - auto height */}
       <div className="mt-20 mb-20 relative w-full flex justify-center items-center ">
         <div className="transform scale-75 md:scale-100 lg:scale-[1.2]">
-          {/* Laptop SVG image */}
           <div className="relative z-10 w-[80vw] md:w-[75vw] max-w-[500px] flex justify-center items-center">
-            <Image
-              src="/Laptop- About Page.svg"
-              alt="Laptop SVG"
-              width={500}
-              height={1027}
-              className="relative z-10 w-full h-auto"
-            />
             {/* Sponsors GIF overlayed inside the laptop */}
             <div className="absolute z-20 w-[150%] h-[80%] mb-100 flex pb-[200px] pr-[20px] justify-center items-center -mt-[7.5%]">
               <Image
@@ -164,7 +153,7 @@ const PrizesSection = () => {
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-full h-auto"
+                className="w-full h-auto translate-y-[80px]"
               />
             </div>
           </div>
