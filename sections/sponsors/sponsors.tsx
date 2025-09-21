@@ -64,6 +64,12 @@ const sponsors = [
     level: "Bronze",
   },
   {
+    name: "Tech Town",
+    image: "/logos/TechTown.png",
+    website: "https://techtowndetroit.org",
+    level: "Bronze",
+  },
+  {
     name: "Rocket Central",
     image: "/logos/rocket.png",
     website: "https://www.rocketcentral.com/",
@@ -137,8 +143,7 @@ const Sponsors = () => {
   return (
     <div
       id="sponsors"
-      className="relative min-h-[2000px] lg:min-h-[900px] overflow-hidden flex flex-col items-center justify-center"
-      // className="relative min-h-fit overflow-hidden flex flex-col items-center justify-center"
+      className="relative w-full py-16 md:py-24 flex flex-col items-center mb-16 md:mb-24"
     >
       <div className="flex justify-center md:pt-20 mb-20">
         <div className="bg-purple text-black px-8 py-2 rounded-full shadow-lg">
