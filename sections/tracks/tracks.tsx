@@ -6,6 +6,8 @@ import CodeGreen from "@/components/tracks/track-articles/CodeGreen";
 import FinancialFirewall from "@/components/tracks/track-articles/FinancialFirewall";
 import MissionInnovation from "@/components/tracks/track-articles/MissionInnovation";
 import OperationAutoDrive from "@/components/tracks/track-articles/OperationAutoDrive";
+import FreeWili from "@/components/tracks/track-articles/FreeWili";
+import FetchAi from "@/components/tracks/track-articles/FetchAi";
 
 const TracksSection = () => {
   return (
@@ -24,6 +26,8 @@ const TracksSection = () => {
         <FinancialFirewall />
         <OperationAutoDrive />
         <MissionInnovation />
+        <FreeWili />
+        <FetchAi />
       </section>
     </section>
   );

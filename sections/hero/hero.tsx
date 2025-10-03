@@ -18,7 +18,7 @@ const ApplyButton = () => {
             ${hovered ? "bg-purple" : "bg-purple/70"}
             transition-all duration-300`}
         >
-          Apply Now
+          Waitlist
         </button>
       </div>
     </Link>
