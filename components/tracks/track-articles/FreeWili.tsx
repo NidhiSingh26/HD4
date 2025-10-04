@@ -9,9 +9,9 @@ const FreeWili = () => {
           <Image
             src="/logos/freewiliwhite.png"
             alt="Free Wili"
-            width={250}
-            height={250}
-            className="mb-16 mt-16"
+            width={300}
+            height={300}
+            className="mb-24 mt-24"
           />
           <h1 className="text-2xl md:text-3xl lg:text-3xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center mt-4">
             BEST USE OF FREE-WILI
