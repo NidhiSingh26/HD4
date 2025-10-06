@@ -146,9 +146,9 @@ const PrizesSection = () => {
         <div className="transform scale-75 md:scale-100 lg:scale-[1.2]">
           <div className="relative z-10 w-[80vw] md:w-[75vw] max-w-[500px] flex justify-center items-center">
             {/* Sponsors GIF overlayed inside the laptop */}
-            <div className="absolute z-20 w-[150%] h-[80%] mb-100 flex pb-[200px] pr-[20px] justify-center items-center -mt-[7.5%]">
+            <div className="absolute left-1/2 -translate-x-1/2 z-20 w-[100%] md:w-[120%] max-w-[90vw] md:max-w-[500px] h-[80%] mb-100 flex pb-[200px] pr-[20px] justify-center items-center -mt-[7.5%]">
               <Image
-                src="/Hologram- Prizes.svg"
+                src="/Hologram- Prizes.png"
                 alt="Sponsors GIF"
                 width={0}
                 height={0}

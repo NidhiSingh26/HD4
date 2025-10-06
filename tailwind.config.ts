@@ -9,7 +9,7 @@ export const colors = {
   purple: "#a600ff",
   blue: "#00a3ff",
   neonpurple: "#cc66ff",
-  whitepurple : "#e6ccff"
+  whitepurple : "#ffffff"
 };
 
 const config: Config = {
