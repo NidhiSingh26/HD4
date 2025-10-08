@@ -1,20 +1,24 @@
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 const FreeWili = () => {
   return (
     <article className="text-center lg:text-left lg:mb-8 grid grid-cols-1 gap-4 lg:flex lg:flex-row lg:items-center">
-      <div className="relative lg:flex-1 flex items-center justify-center">
+      <div className="relative lg:flex-1 flex-row items-center justify-center">
+        <h1 className="text-2xl md:text-3xl lg:text-3xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center mt-4">
+          BEST USE OF FREE-WILI Web Assembly
+        </h1>
         <div className="relative flex flex-col items-center justify-center">
           <Image
             src="/logos/freewiliwhite.png"
             alt="Free Wili"
             width={300}
             height={300}
-            className="mb-24 mt-24"
+            className="mb-16 mt-16"
           />
-          <h1 className="text-2xl md:text-3xl lg:text-3xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center mt-4">
-            BEST USE OF FREE-WILI
+
+          <h1 className="text-2xl md:text-3xl lg:text-3xl text-neonpurple font-spy italic uppercase drop-shadow-glow text-shadow-purple-glow text-center mb-4">
+            BEST USE OF FREE-WILI Python
           </h1>
         </div>
       </div>
@@ -54,6 +58,17 @@ const FreeWili = () => {
           <span>EYE</span> Camera Orca for vision
           <span className="font-sans">-</span>based applications
           <span className="font-sans">.</span>
+        </p>
+        <p className="relative z-20 mt-2 text-xl lg:text-2xl md:h-auto text-white font-klein">
+          For more information view{" "}
+          <Link
+            href="https://docs.freewili.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-purple underline"
+          >
+            here<span className="font-sans text-purple">.</span>
+          </Link>
         </p>
       </div>
     </article>
