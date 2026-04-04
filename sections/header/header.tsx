@@ -17,7 +17,7 @@ const HeaderSection = () => {
     { title: "Sponsors", path: "#sponsors" },
     { title: "FAQ", path: "#faq" },
     { title: "Team", path: "#team" },
-    { title: "Contact", path: "#contact" },
+    { title: "Test1", path: "#contact" },
   ];
 
   useEffect(() => {
