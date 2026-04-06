@@ -10,38 +10,46 @@ import OurTeamSection from "@/sections/our-team/team";
 import PrizesSection from "@/sections/prizes/prizes";
 import SponsorsSection from "@/sections/sponsors/sponsors";
 import TracksSection from "@/sections/tracks/tracks";
+import Hd5ComingSoon from "@/sections/hd5ComingSoon/hd5ComingSoon";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import "./globals.css";
+import hd5ComingSoonBg from "../assets/HD5ComingSoonBg.jpg"
 
 export default function Home() {
   //change the glitch effect by changing the default state
-  const [showGlitch, setShowGlitch] = useState(true);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowGlitch(false);
-    }, 800); //1000ms= 1s
+  // const [showGlitch, setShowGlitch] = useState(true);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowGlitch(false);
+  //   }, 800); //1000ms= 1s
 
-    return () => clearTimeout(timer);
-  }, []);
-  if (showGlitch) {
-    return (
-      <div className="w-screen h-screen">
-        {/* MatrixEffect or ProgBarEffect or GlitchEffect */}
-        <TVGlitchEffect />
-      </div>
-    );
-  }
+  //   return () => clearTimeout(timer);
+  // }, []);
+  // if (showGlitch) {
+  //   return (
+  //     <div className="w-screen h-screen">
+  //       {/* MatrixEffect or ProgBarEffect or GlitchEffect */}
+  //       <TVGlitchEffect />
+  //     </div>
+  //   );
+  // }
 
   return (
     //don't need the gap here
     <div className="w-full h-full font-poppins">
-      <div className="fixed inset-0 -z-10 bg-black matrix-bg" />
+      <div className="fixed inset-0 bg-black z-10 matrix-bg" 
+      style={{
+        backgroundImage: `url(${hd5ComingSoonBg.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "100vh",
+      }} />
 
-      <div className="fixed w-full z-50">
+      {/* <div className="fixed w-full z-50">
         <HeaderSection />
-      </div>
-      <div className="absolute right-8 top-16 md:right-8 md:top-16 z-10">
+      </div> */}
+      {/* <div className="absolute right-8 top-16 md:right-8 md:top-16 z-10">
         <a href="https://mlh.io/seasons/2026/events" target="_blank">
           <Image
             src="/mlh.svg"
@@ -51,17 +59,18 @@ export default function Home() {
             quality={100}
           />
         </a>
-      </div>
+      </div> */}
       <div className="flex flex-col w-full h-full pt-16">
-        <HeroSection />
+        <Hd5ComingSoon />
+        {/* <HeroSection />
         <AboutSection />
         <TracksSection />
         <PrizesSection />
         <SponsorsSection />
         <FaqSection />
         <OurTeamSection />
-        <ContactSection />
-        <FooterSection />
+        <ContactSection /> 
+        <FooterSection /> */}
       </div>
     </div>
   );
